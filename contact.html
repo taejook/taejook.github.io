@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" >
+        <!--script src="https://kit.fontawesome.com/a076d05399.js"></script-->
+        <link rel="stylesheet" href="contact.css"/>
+        <title>Shine Academy</title>
+    </head>
+    <body>
+        <nav>
+            <div class="logo"><img src="images/img_logo.jpg"></div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="eshop.html">eShop</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <section class="contact">
+          <div class="content">
+              <h2>Contact Shine Academy</h2>
+              <p>Include an email and phone number so visitors can get in touch with you on their first attempt. Include a short form using fields that'll help your business understand who's contacting them. Have a call-to-action to provide visitors with another action to take if they choose not to complete the form.</p>
+          </div>
+          <div class="container">
+              <div class="contactInfo">
+                  <div class="box">
+                      <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                      <div class="text">
+                      <h3> Address</h3>
+                      <p>132 Shine Road,<br>Academy,Bahrain,<br>55060</p>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                  <div class="text">
+                      <h3>Phone</h3>
+                      <p>507-475-6094</p>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                  <div class="text">
+                      <h3>Email</h3>
+                      <P>ShineAcademy@hotmail.com</p>
+                  </div>
+              </div>
+          </div>
+          <div class="contactForm">
+              <form>
+                  <h2>Send Message</h2>
+                  <div class="inputBox">
+                      <input type="text" name="" required="required">
+                      <span>Full Name</span>
+                  </div>
+                  <div class="inputBox">
+                      <input type="text" name="" required="required">
+                      <span>Email</span>
+                      </div>
+                      <div class="inputBox">
+                          <textarea required="required"></textarea>
+                          <span>Type your message</span>
+                      </div>
+                      <div class="inputBox">
+                          <input type="submit" name="" value="Send">
+                      </div>
+              </form>
+              </div>
+          </div>
+      </section>
+ 
+        <!-- HTML code for chat box -->
+
+        <!--Chat button-->
+        <button class="open-button">Chat with us</button>
+        
+        <!--Chat Popup-->
+
+        <script src="functions.js"></script>
+        <script>
+            const chatButton = document.querySelector(".open-button");
+            chatButton.addEventListener("click", addChatBox);
+        </script>
+    </body>
+    <footer id= "footer">
+        <div class = 'footer_logo'>
+          <img src= 'images/img_logo.jpg' width= "100" length = "100" style="float: left; margin-right: 15px;"/>
+            <p>Contact us! 1-234-567-8910<br> asdfjeaf@gmail.com <br> 123 University Ave, Newark, NJ 07109</p>
+        </div>
+</html>

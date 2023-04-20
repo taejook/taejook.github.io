@@ -1,0 +1,402 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+body {
+    background-color: #0000;
+    background-image: url('background7.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color:#66c1b7;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  .logo img{
+    padding: 0 100px;
+  }
+  
+  /*Navbar links controls*/
+  nav ul li{
+    margin-left: 50px;
+  }
+  nav ul{
+    display: flex;
+    margin-right: 50px;
+    justify-content: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  nav a:hover {
+    color: black;
+  }
+  
+  nav ul li a{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px ;
+  }
+  a.active, a:hover{
+    background: #c1b766;
+    transition: .5s;
+  }
+  
+
+
+
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 10px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+
+}
+.contact .content 
+{
+    max-width: 600px;
+    text-align: center;
+}
+.contact .content h2 
+{
+    font-size: 50px;
+    min-height: 10vh;
+    font-weight: 500;
+    color: #080808;
+}
+.contact .content p 
+{
+    font-weight: 500;
+    color: #070707;
+}
+.container 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo 
+{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box 
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text 
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #0f0f0f;
+    flex-direction: column;
+    font-weight: 500;
+}
+.container .contactInfo .box .text h3
+{
+    font-weight: 700;
+    color: #026f7e;
+
+}
+.contactForm 
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2 
+{
+    font-size: 30px;
+    color: #080808;
+    font-weight: 500;
+}
+.contactForm .inputBox 
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span 
+{
+    position: relative;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color:#666;
+}
+.contactForm .inputBox input:focus ~ span, 
+.contactForm .inputBox input:valid ~ span, 
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span 
+{
+
+    color: #1192a3;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+
+}
+
+ 
+
+
+/**
+.action_btn {
+    background-color: orange;
+    color:#ffff;
+    height: 40px;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    justify-content:space-around;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.action_btn:hover {
+    scale: 1.05;
+    color:#fff;
+
+}**/
+
+/**
+This is the code for the chat box
+**/
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: lightseagreen;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 15px;
+    width: 280px;
+}
+  
+  /* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 23px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+  
+  /* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+  
+  /* Full-width inputs */
+.form-container input[type=text],
+.form-container input[type=email],
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+}
+  
+  /* When an input gets focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=email]:focus,
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+  /* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: rgb(253, 247, 247);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+  
+  /* Add a cyan background color to the cancel button */
+.form-container .cancel {
+    background-color: cyan;
+}
+  
+  /* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.input-container {
+    margin-bottom: 15px;
+}
+  
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+button[type=submit]:hover {
+    opacity: 0.8;
+}
+  
+.signup-container {
+    text-align: center;
+}
+  
+.signup-container span {
+    font-size: 14px;
+}
+  
+.signup-container a {
+    font-size: 14px;
+    color: #2196F3;
+}
+  
+.signup-container a:hover {
+    color: #0b7dda;
+}
+  
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #66c1b7;
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+    align-items: center
+  }
+  
+  #footer{
+    margin-top: auto;
+    font-size: 20px;
+    background-color: #66c1b7;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }

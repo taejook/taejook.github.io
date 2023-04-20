@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!--script src="https://kit.fontawesome.com/a076d05399.js"></script-->
+    <link rel="stylesheet" href="services.css"/>
+    <title>Shine Academy</title>
+  </head>
+  <body>
+      <nav>
+        <div class="logo"><img src="images/img_logo.jpg"></a></div>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li-->
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="eshop.html">eShop</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    <div class="body-text"><h1>Choose Excellence, Choose Us!</h1></div>
+   
+    <!-- HTML code for chat box -->
+
+    <!--Chat button-->
+    <button class="open-button">Chat with us</button>
+    <div class="login-container">
+      <button id="login-button">Login</button>
+      <div id="login-form" class="modal">
+        <form class="modal-content" action="">
+          <span class="close">&times;</span>
+          <h2>Login</h2>
+          <div class="input-container">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+          </div>
+          <div class="input-container">
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+          </div>
+          <button type="submit">Login</button>
+          <div class="signup-container">
+            <span>Don't have an account? </span>
+            <a href="#">Sign up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+       
+    <!--Chat Popup-->
+    <script src="functions.js"></script>
+    <script>
+            const chatButton = document.querySelector(".open-button");
+            chatButton.addEventListener("click", addChatBox);
+    </script>
+   
+  </body>
+  <footer id= "footer">
+    <div class = 'footer_logo'>
+      <img src= 'images/img_logo.jpg' width= "100" length = "100" style="float: left; margin-right: 15px;"/>
+        <p>Contact us! 1-234-567-8910<br> asdfjeaf@gmail.com <br> 123 University Ave, Newark, NJ 07109</p>
+    </div>
+</footer>
+</html>
