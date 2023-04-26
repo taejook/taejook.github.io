@@ -352,3 +352,54 @@ section::before{
   text-align: center;
   width: 100%;
 }
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 3px;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #66c1b7;
+  color: rgb(0, 0, 0);
+}
+
+/* Linkedin */
+.fa-linkedin {
+  background: #66c1b7;
+  color: rgb(0, 0, 0);
+}
+
+.cart {
+  position: relative;
+  background-color: #fff;
+  color: #212529;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 4px;
+  margin-right: 40px;
+  background-color: #66c1b7;
+}
+
+.cartAmount {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
